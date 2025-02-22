@@ -1,0 +1,184 @@
+{
+  "financialSchemes": [
+    {
+      "name": "Kisan Credit Card (KCC)",
+      "date": "1998",
+      "description": "Provides short-term credit to farmers for agricultural needs at subsidized interest rates.",
+      "link": "https://www.nabard.org/"
+    },
+    {
+      "name": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+      "date": "2019",
+      "description": "Income support scheme providing ₹6,000 annually to eligible farmers.",
+      "link": "https://pmkisan.gov.in/"
+    },
+    {
+      "name": "Agriculture Infrastructure Fund (AIF)",
+      "date": "2020",
+      "description": "Provides financial support for post-harvest infrastructure and community farming assets.",
+      "link": "https://agriinfra.dac.gov.in/"
+    },
+    {
+      "name": "Rural Infrastructure Development Fund (RIDF)",
+      "date": "1995",
+      "description": "Managed by NABARD to fund rural infrastructure projects.",
+      "link": "https://www.nabard.org/"
+    },
+    {
+      "name": "Interest Subvention Scheme (ISS)",
+      "date": "2006",
+      "description": "Offers interest rate concessions on crop loans to farmers.",
+      "link": "https://agricoop.nic.in/"
+    },
+    {
+      "name": "Farmers Producer Organizations (FPOs) Scheme",
+      "date": "2020",
+      "description": "Supports farmer groups with financial assistance for better market access.",
+      "link": "https://sfacindia.com/"
+    },
+    {
+      "name": "National Agriculture Market (e-NAM)",
+      "date": "2016",
+      "description": "An online trading platform for better price discovery and direct market access.",
+      "link": "https://www.enam.gov.in/"
+    },
+    {
+      "name": "Paramparagat Krishi Vikas Yojana (PKVY)",
+      "date": "2015",
+      "description": "Promotes organic farming through financial assistance.",
+      "link": "https://pgsindia-ncof.gov.in/"
+    },
+    {
+      "name": "Dairy Entrepreneurship Development Scheme (DEDS)",
+      "date": "2010",
+      "description": "Provides subsidies for setting up dairy farms and dairy-related businesses.",
+      "link": "https://dahd.nic.in/"
+    },
+    {
+      "name": "Livestock Insurance Scheme",
+      "date": "2005",
+      "description": "Covers financial loss due to livestock mortality.",
+      "link": "https://dahd.nic.in/"
+    },
+    {
+      "name": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+      "date": "2016",
+      "description": "Provides financial support against crop loss due to natural calamities.",
+      "link": "https://pmfby.gov.in/"
+    },
+    {
+      "name": "Weather Based Crop Insurance Scheme (WBCIS)",
+      "date": "2007",
+      "description": "Provides insurance based on weather parameters to mitigate financial losses.",
+      "link": "https://pmfby.gov.in/"
+    },
+    {
+      "name": "Coconut Palm Insurance Scheme (CPIS)",
+      "date": "2009",
+      "description": "Covers coconut farmers against natural calamities.",
+      "link": "https://pmfby.gov.in/"
+    },
+    {
+      "name": "Pilot Unified Package Insurance Scheme (UPIS)",
+      "date": "2016",
+      "description": "Covers crops, livestock, life, and accident insurance for farmers.",
+      "link": "https://pmfby.gov.in/"
+    },
+    {
+      "name": "National Livestock Mission (NLM)",
+      "date": "2014",
+      "description": "Financial assistance for the development of livestock, poultry, and dairy sectors.",
+      "link": "https://nlm.udyamimitra.in/"
+    },
+    {
+      "name": "Fisheries and Aquaculture Infrastructure Development Fund (FIDF)",
+      "date": "2018",
+      "description": "Supports fisheries and aquaculture infrastructure development with concessional finance.",
+      "link": "https://nfdb.gov.in/"
+    },
+    {
+      "name": "Sub-Mission on Agricultural Mechanization (SMAM)",
+      "date": "2014",
+      "description": "Provides financial aid to farmers for purchasing modern agricultural equipment.",
+      "link": "https://agricoop.nic.in/"
+    },
+    {
+      "name": "National Mission on Horticulture (MIDH)",
+      "date": "2014",
+      "description": "Provides financial support for promoting horticulture development.",
+      "link": "https://midh.gov.in/"
+    },
+    {
+      "name": "Pradhan Mantri Matsya Sampada Yojana (PMMSY)",
+      "date": "2020",
+      "description": "Financial assistance for fisheries development, including infrastructure and technology.",
+      "link": "https://nfdb.gov.in/"
+    },
+    {
+      "name": "Small Farmers Agribusiness Consortium (SFAC)",
+      "date": "1994",
+      "description": "Provides credit guarantees and financial support for agribusiness projects.",
+      "link": "https://sfacindia.com/"
+    },
+    {
+      "name": "Rashtriya Krishi Vikas Yojana (RKVY)",
+      "date": "2007",
+      "description": "Provides financial aid to increase farmers' income through productivity improvements.",
+      "link": "https://rkvy.nic.in/"
+    },
+    {
+      "name": "Soil Health Management (SHM)",
+      "date": "2015",
+      "description": "Provides financial support for soil testing and fertility management.",
+      "link": "https://agricoop.nic.in/"
+    },
+    {
+      "name": "National Food Security Mission (NFSM)",
+      "date": "2007",
+      "description": "Provides funding to boost food grain production and farmer income.",
+      "link": "https://nfsm.gov.in/"
+    },
+    {
+      "name": "Gramin Bhandaran Yojana",
+      "date": "2001",
+      "description": "Supports rural godown construction to reduce post-harvest losses.",
+      "link": "https://www.nabard.org/"
+    },
+    {
+      "name": "Pradhan Mantri Krishi Sinchayee Yojana (PMKSY)",
+      "date": "2015",
+      "description": "Financial support for irrigation infrastructure and water conservation.",
+      "link": "https://pmksy.gov.in/"
+    },
+    {
+      "name": "Mega Food Parks Scheme",
+      "date": "2008",
+      "description": "Provides financial assistance to food processing industries.",
+      "link": "https://mofpi.nic.in/"
+    },
+    {
+      "name": "National Mission on Oilseeds and Oil Palm (NMOOP)",
+      "date": "2014",
+      "description": "Financial assistance for increasing oilseed production.",
+      "link": "https://agricoop.nic.in/"
+    },
+    {
+      "name": "National Bamboo Mission",
+      "date": "2018",
+      "description": "Promotes bamboo cultivation with financial support.",
+      "link": "https://nbm.da.gov.in/"
+    },
+    {
+      "name": "National Dairy Development Board (NDDB) Schemes",
+      "date": "1965",
+      "description": "Provides financial aid for dairy development.",
+      "link": "https://www.nddb.coop/"
+    },
+    {
+      "name": "Farm Mechanization Scheme",
+      "date": "2013",
+      "description": "Financial aid for purchasing modern farm equipment.",
+      "link": "https://agricoop.nic.in/"
+    }
+  ]
+} 

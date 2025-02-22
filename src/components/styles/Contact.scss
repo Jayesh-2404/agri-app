@@ -1,0 +1,223 @@
+/* Buttons */
+button,
+.find-btn,
+.view-more {
+    font-size: 18px;
+    color: white;
+    display: inline-block;
+    padding: 9px 25px;
+    background-color: #007633;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover,
+.find-btn:hover{
+    background-color: #009640;
+}
+
+.slideshow-header {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Ensure it's above the slideshow */
+    text-align: center;
+    color: white;
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+}
+
+
+#contact-section {
+    height: 100%;
+    background-color: rgb(6, 30, 50, 0.05);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+#contact-section .title-text{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+
+/* Container for the main content */
+.contact-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+/* Styling for main heading */
+.contact-container h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+/* Styling for paragraph text */
+.contact-container p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+/* Styling for contact box container */
+.contact-box {
+    background: #ffffff;
+    display: flex;
+    border-radius: 20px;
+}
+
+/* Styling for left container inside the contact box */
+.container-left {
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+/* Styling for right container inside the contact box */
+.container-right {
+    flex-basis: 40%;
+    padding: 40px 60px;
+    background: #007633;
+    color: #ffffff;
+    border-radius: 0px 20px 20px 0px;
+}
+
+/* Styling for heading inside left container */
+.container-left h3 {
+    font-size: 25px;
+    color: #353535;
+    margin-bottom: 20px;
+}
+
+/* Styling for heading inside right container */
+.container-right h3 {
+    font-size: 25px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Styling for input rows */
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Styling for input groups inside input rows */
+.input-row .input-group {
+    flex-basis: 45%;
+}
+
+/* Styling for input fields */
+input {
+    width: 95%;
+    border: none;
+    color: #353535;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+} 
+
+/* Styling for textareas */
+textarea {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 15px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Styling for labels */
+label {
+    font-family: "Inter", sans-serif;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    color: #353535;
+}
+
+.submit-btn{
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/* Styling for table cells */
+tr td:first-child {
+    font-size: 20px;
+    font-weight: 600;
+    padding-right: 20px;
+}
+
+tr td {
+    font-family: "Inter", sans-serif;
+    padding-top: 20px;
+}
+
+/* Styling for iframes */
+iframe {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 30px;
+}
+
+/* Footer Section */
+/* ================ */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 15px 5%;
+}
+
+.footer-left img {
+    width: 200px; /* Adjust as needed */
+}
+
+.footer-right .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-right .social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-right .social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-right .social-links a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    transition: all 0.3 ease 0.2;
+}
+
+.footer-right .social-links a:hover {
+    color: #00ca57;
+}
