@@ -1,8 +1,13 @@
+"use client"
+
 import Link from "next/link"
 import Image from "next/image"
 import { Leaf, Sprout, Tractor, ArrowUpRight } from "lucide-react"
+import { useState } from "react"
 
 export default function Home() {
+  const [bookmarks, setBookmarks] = useState([])
+
   const schemes = [
     {
       icon: "🌱",
@@ -48,41 +53,60 @@ export default function Home() {
     },
   ]
 
+  const addToBookmarks = (scheme) => {
+    setBookmarks((prevBookmarks) => [...prevBookmarks, scheme])
+  }
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-green-50 to-white">
+      
       <div className="container px-4 py-16 md:py-24">
-        <div className="mt-[-50px] mb-0 text-center">
+      <div className="mt-[-50px] mb-0 text-center">
           <h1 className="mb-2 text-4xl font-bold tracking-tight text-gray-900 md:text-5xl lg:text-3xl">
             किसान सहायता योजनाएं
           </h1>
           <p className="text-xl text-gray-600 md:text-2xl">Government Schemes and Support</p>
+          
         </div>
-
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {/* Schemes Card */}
-          <div className="group relative overflow-hidden rounded-2xl bg-white p-6 shadow-lg transition-all hover:shadow-xl h-64">
-            <div className="absolute -right-4 -top-4 h-24 w-24 rounded-full bg-green-100 opacity-50 transition-transform group-hover:scale-150" />
-            <div className="relative">
-              <div className="mb-4 inline-block rounded-lg bg-green-100 p-3">
-                <Leaf className="h-6 w-6 text-green-600" />
-              </div>
-              <h3 className="mb-2 text-2xl font-bold text-gray-900">Schemes</h3>
-              <p className="mb-4 text-gray-600">
-                Explore various government schemes designed to support and empower farmers across India.
-              </p>
-                <Link href="/schemes/government-schemes"
-                className="inline-flex items-center rounded-lg bg-green-600 px-4 py-2 text-white transition-colors hover:bg-green-700"
+        <div className="px-4 py-16">
+        <Link href="/schemes/bookmarks"
+                className="inline-flex items-center rounded-lg bg-black px-4 py-2 text-white transition-colors hover:bg-gray-800"
               >
-                View Schemes
+                bookmarks
                 <svg className="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </Link>
-            </div>
-          </div>
+        </div>
+        
+        <div className="ms-auto">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:ml-4">
+          {/* Schemes Card */}
+          <div className="group relative overflow-hidden rounded-2xl bg-white p-6 shadow-lg transition-all hover:shadow-xl h-80">
+  <div className="absolute -right-4 -top-4 h-24 w-24 rounded-full bg-green-100 opacity-50 transition-transform group-hover:scale-150" />
+  <div className="relative">
+    <div className="mb-4 inline-block rounded-lg bg-green-100 p-3">
+      <Leaf className="h-6 w-6 text-green-600" />
+    </div>
+    <h3 className="mb-2 text-2xl font-bold text-gray-900">Schemes</h3>
+    <p className="mb-4 text-gray-600">
+      Explore various government schemes designed to support and empower farmers across India.
+    </p>
+    <Link
+      href="/schemes/government-schemes"
+      className="inline-flex items-center rounded-lg bg-green-600 px-4 py-2 text-white transition-colors hover:bg-green-700"
+    >
+      View schemes
+      <svg className="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+      </svg>
+    </Link>
+  </div>
+</div>
+
 
           {/* Subsidies Card */}
-          <div className="group relative overflow-hidden rounded-2xl bg-white p-6 shadow-lg transition-all hover:shadow-xl h-64">
+          <div className="group relative overflow-hidden rounded-2xl bg-white p-6 shadow-lg transition-all hover:shadow-xl h-80">
             <div className="absolute -right-4 -top-4 h-24 w-24 rounded-full bg-green-100 opacity-50 transition-transform group-hover:scale-150" />
             <div className="relative">
               <div className="mb-4 inline-block rounded-lg bg-green-100 p-3">
@@ -104,7 +128,7 @@ export default function Home() {
           </div>
 
           {/* Financial Support Card */}
-          <div className="group relative overflow-hidden rounded-2xl bg-white p-6 shadow-lg transition-all hover:shadow-xl h-64">
+          <div className="group relative overflow-hidden rounded-2xl bg-white p-6 shadow-lg transition-all hover:shadow-xl h-80">
             <div className="absolute -right-4 -top-4 h-24 w-24 rounded-full bg-green-100 opacity-50 transition-transform group-hover:scale-150" />
             <div className="relative">
               <div className="mb-4 inline-block rounded-lg bg-green-100 p-3">
@@ -113,6 +137,10 @@ export default function Home() {
               <h3 className="mb-2 text-2xl font-bold text-gray-900">Financial Support</h3>
               <p className="mb-4 text-gray-600">
                 Learn about financial support programs and assistance available for farmers.
+                hasda;sfjioahfosh
+                asfasfyuafa
+                sdjaufdiagsdyhaohsfas
+                sdyafsugaufoahsf
               </p>
                <Link href="/schemes/financial-support"
                 className="inline-flex items-center rounded-lg bg-green-600 px-4 py-2 text-white transition-colors hover:bg-green-700"
@@ -124,6 +152,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
+        </div>
         </div>
 {/* 
         <div className="mt-16 text-center">
@@ -139,7 +168,7 @@ export default function Home() {
         {/* News Section */}
         <div className="mt-20 grid gap-12 md:grid-cols-[300px_1fr]">
           <div>
-            <h2 className="text-4xl font-bold">Latest News</h2>
+            <h2 className=" mt-20 text-4xl font-bold">Latest News</h2>
             {/* <p className="mt-4 text-gray-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua.
@@ -176,4 +205,4 @@ export default function Home() {
     </main>
   )
 }
-
+//what i have done is 

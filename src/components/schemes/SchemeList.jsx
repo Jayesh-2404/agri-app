@@ -16,6 +16,7 @@ const SchemesList = ({ title, data }) => {
   const [searchQuery, setSearchQuery] = useState("")
   const [currentPage, setCurrentPage] = useState(1)
   const [filteredData, setFilteredData] = useState([])
+  const [bookmarkedItems, setBookmarkedItems] = useState([])
   const itemsPerPage = 6
 
   const filterData = useCallback(() => {
@@ -30,7 +31,10 @@ const SchemesList = ({ title, data }) => {
   }, [searchQuery, data])
 
   useEffect(() => {
-    filterData()
+    // Load bookmarked items from local storage on component mount
+    const storedBookmarks = JSON.parse(localStorage.getItem('bookmarkedItems')) || [];
+    setBookmarkedItems(storedBookmarks);
+    filterData();
   }, [filterData])
 
   const getCurrentItems = () => {
@@ -50,6 +54,19 @@ const SchemesList = ({ title, data }) => {
     pension: { gradient: "from-purple-500 to-pink-600", icon: "👨‍🌾" },
     credit: { gradient: "from-red-500 to-rose-600", icon: "💳" },
     default: { gradient: "from-gray-500 to-gray-600", icon: "📋" },
+  }
+
+  const toggleBookmark = (item) => {
+    console.log("Toggling bookmark for:", item); // Debugging line
+    setBookmarkedItems((prev) => {
+      const updatedBookmarks = prev.includes(item) 
+        ? prev.filter((bookmarkedItem) => bookmarkedItem !== item) 
+        : [...prev, item];
+      
+      console.log("Updated bookmarks:", updatedBookmarks); // Debugging line
+      localStorage.setItem('bookmarkedItems', JSON.stringify(updatedBookmarks)); // Store in local storage
+      return updatedBookmarks;
+    });
   }
 
   return (
@@ -84,6 +101,12 @@ const SchemesList = ({ title, data }) => {
                 <div className="mb-4 flex items-center justify-between">
                   <span className="text-4xl">{style.icon}</span>
                   <span className="text-sm text-gray-500">Date: {item.date}</span>
+                  <Button
+                    onClick={() => toggleBookmark(item)}
+                    className={`flex items-center justify-center h-8 w-24 rounded-md transition-transform hover:scale-105 ${bookmarkedItems.includes(item) ? 'bg-red-500 text-white' : 'bg-gray-200 text-black'}`}
+                  >
+                    {bookmarkedItems.includes(item) ? 'Unbookmark' : 'Bookmark'}
+                  </Button>
                 </div>
                 <h3 className="mb-1 text-xl font-bold text-gray-900">{item.nameHindi || item.name}</h3>
                 {item.nameHindi && <h4 className="mb-3 text-sm font-medium text-gray-600">{item.name}</h4>}

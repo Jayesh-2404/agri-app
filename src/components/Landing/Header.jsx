@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import logo from "../assets/image/logo.png"; // Ensure correct path
 import "../styles/Header.scss"; // Ensure SCSS setup
+import "../styles/Home.scss";
 
 const Header = () => {
   const router = useRouter(); // Hook for navigation
@@ -19,10 +20,13 @@ const Header = () => {
         <Link href="/#services">Services</Link>
         <Link href="/#contact">Contact me</Link>
       </main>
-      <button type="button">Login</button>
-      <button type="button" onClick={() => router.push("/schemes")}>
-        Get Started
-      </button>
+      <div className="btn-wrapper">
+      {/* <button type="button">Login</button> */}
+      
+        <button type="button" onClick={() => router.push("/schemes")}>
+          schemes ➜
+        </button>
+      </div>
     </nav>
   );
 };
