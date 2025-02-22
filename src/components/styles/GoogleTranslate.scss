@@ -1,0 +1,24 @@
+#google_translate_element {
+    text-align: right;
+    margin: 2px;
+  }
+  
+  .goog-te-banner-frame {
+    display: none !important;
+  }
+  
+  .goog-te-gadget {
+    font-size: 16px !important;
+  }
+  
+  .goog-te-gadget span {
+    display: none !important;
+  }
+  
+  .goog-te-gadget select {
+    padding: 2px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+  }
