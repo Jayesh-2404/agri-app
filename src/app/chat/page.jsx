@@ -13,6 +13,13 @@ function Chat() {
   const [generatingAnswer, setGeneratingAnswer] = useState(false);
 
   const chatContainerRef = useRef(null);
+  const context = `
+You are a helpful assistant specialized in Government schemes, subsidies, and financial support provided for farmers by the government. 
+Your task is to provide accurate and concise information regarding various schemes, including their objectives, eligibility criteria, benefits, 
+application process, deadlines, and required documents. You should categorize schemes into central, state, and special financial assistance programs, 
+ensuring that farmers receive relevant information based on their location. Additionally, guide users on how to apply for subsidies and link them 
+to official portals whenever possible. Support multi-language responses and ensure accessibility for farmers with different backgrounds.
+`;
 
   useEffect(() => {
     if (chatContainerRef.current) {
@@ -36,7 +43,11 @@ function Chat() {
         url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyAW-B8Es6YDd98inqpBh3xLKTqzdY-_eS0`,
         method: "post",
         data: {
-          contents: [{ parts: [{ text: question }] }],
+          contents: [
+            {
+              parts: [{ text: `${context}\nUser: ${currentQuestion}\nAssistant:` }],
+            },
+          ],
         },
       });
 
