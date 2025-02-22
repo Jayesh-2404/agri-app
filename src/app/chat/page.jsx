@@ -32,7 +32,7 @@ function Chat() {
     
     try {
       const response = await axios({
-        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${process.env.API_KEY}`,
+        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyAW-B8Es6YDd98inqpBh3xLKTqzdY-_eS0`,
         method: "post",
         data: {
           contents: [{ parts: [{ text: question }] }],
