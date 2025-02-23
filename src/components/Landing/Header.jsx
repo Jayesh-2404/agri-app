@@ -17,7 +17,7 @@ const Header = () => {
       <main>
         <Link href="/#home">Home</Link>
         <Link href="/#about">About Us</Link>
-        <Link href="/#services">Services</Link>
+        <Link href="/services">Services</Link>
         <Link href="/#contact">Contact me</Link>
       </main>
       <div className="btn-wrapper">
