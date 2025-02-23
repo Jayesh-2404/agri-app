@@ -34,22 +34,22 @@ export default function Home() {
 
   const news = [
     {
-      category: "CATEGORY",
-      date: "JUNE 2023",
+      category: "Agriculture",
+      date: "Jan 2025",
       title:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+        "Agriculture Minister Chouhan assures of bumper wheat crop this year, prices may cool.",
     },
     {
-      category: "CATEGORY",
-      date: "JUNE 2023",
+      category: "Agriculture",
+      date: "Feb 2025",
       title:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+        "PHDCCI moots gradual reduction of chemical fertilizers for sustainable farming.",
     },
     {
-      category: "CATEGORY",
-      date: "JUNE 2023",
+      category: "Agriculture",
+      date: "Dec 2024",
       title:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+        "The role of government policies in promoting solar adoption among farmers ",
     },
   ]
 
@@ -137,10 +137,7 @@ export default function Home() {
               <h3 className="mb-2 text-2xl font-bold text-gray-900">Financial Support</h3>
               <p className="mb-4 text-gray-600">
                 Learn about financial support programs and assistance available for farmers.
-                hasda;sfjioahfosh
-                asfasfyuafa
-                sdjaufdiagsdyhaohsfas
-                sdyafsugaufoahsf
+               
               </p>
                <Link href="/schemes/financial-support"
                 className="inline-flex items-center rounded-lg bg-green-600 px-4 py-2 text-white transition-colors hover:bg-green-700"
@@ -174,7 +171,7 @@ export default function Home() {
               dolore magna aliqua.
             </p> */}
             <Link
-              href="/news"
+              href="https://www.thehindubusinessline.com/economy/agri-business/"
               className="mt-8 inline-flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-r from-green-400 to-green-500 text-white"
             >
               <ArrowUpRight className="h-6 w-6" />
@@ -185,7 +182,7 @@ export default function Home() {
             {news.map((item, index) => (
               <Link
                 key={index}
-                href="/news"
+                href="https://www.thehindubusinessline.com/economy/agri-business/agriculture-minister-chouhan-assures-bumper-wheat-crop-this-year-prices-may-cool/article69246850.ece"
                 className="group block rounded-lg bg-gray-50 p-6 transition-all hover:bg-gray-100"
               >
                 <div className="flex items-center justify-between">

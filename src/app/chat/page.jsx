@@ -11,6 +11,7 @@ function Chat() {
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState("");
   const [generatingAnswer, setGeneratingAnswer] = useState(false);
+  const [isListening, setIsListening] = useState(false);
 
   const chatContainerRef = useRef(null);
   const context = `
@@ -27,15 +28,43 @@ to official portals whenever possible. Support multi-language responses and ensu
     }
   }, [chatHistory, generatingAnswer]);
 
+  useEffect(() => {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    const recognition = new SpeechRecognition();
+
+    recognition.onstart = () => {
+      setIsListening(true);
+    };
+
+    recognition.onresult = (event) => {
+      const transcript = event.results[0][0].transcript;
+      setQuestion(transcript);
+      generateAnswer({ preventDefault: () => {} });
+    };
+
+    recognition.onend = () => {
+      setIsListening(false);
+    };
+
+    if (isListening) {
+      recognition.start();
+    } else {
+      recognition.stop();
+    }
+
+    return () => {
+      recognition.stop();
+    };
+  }, [isListening]);
+
   async function generateAnswer(e) {
     e.preventDefault();
     if (!question.trim()) return;
     
     setGeneratingAnswer(true);
     const currentQuestion = question;
-    setQuestion(""); // Clear input immediately after sending
+    setQuestion("");
     
-    // Add user question to chat history
     setChatHistory(prev => [...prev, { type: 'question', content: currentQuestion }]);
     
     try {
@@ -90,13 +119,13 @@ to official portals whenever possible. Support multi-language responses and ensu
                     <span className="text-green-500">💡</span> General knowledge
                   </div>
                   <div className="bg-white p-4 rounded-lg shadow-sm">
-                    <span className="text-green-500">🔧</span> Technical questions
+                    <span className="text-green-500">🔧</span> Government Data
                   </div>
                   <div className="bg-white p-4 rounded-lg shadow-sm">
-                    <span className="text-green-500">📝</span> Writing assistance
+                    <span className="text-green-500">📝</span> Crop Information
                   </div>
                   <div className="bg-white p-4 rounded-lg shadow-sm">
-                    <span className="text-green-500">🤔</span> Problem solving
+                    <span className="text-green-500">🤔</span> Environment Data
                   </div>
                 </div>
                 <p className="text-gray-500 mt-6 text-sm">
@@ -135,7 +164,7 @@ to official portals whenever possible. Support multi-language responses and ensu
           <div className="flex gap-2">
             <textarea
               required
-              className="flex-1 border border-gray-300 rounded p-3 focus:border-green-400 focus:ring-1 focus:ring-green-400 resize-none"
+              className="flex-1 border border-gray-300 rounded p-3 focus:border-green-400 focus:ring-1 focus:ring-green-400 resize-none relative"
               value={question}
               onChange={(e) => setQuestion(e.target.value)}
               placeholder="Ask anything..."
@@ -146,7 +175,9 @@ to official portals whenever possible. Support multi-language responses and ensu
                   generateAnswer(e);
                 }
               }}
-            ></textarea>
+            >
+              <span className="absolute left-3 top-2 text-gray-500">🎤</span>
+            </textarea>
             <button
               type="submit"
               className={`px-6 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition-colors ${
@@ -155,6 +186,13 @@ to official portals whenever possible. Support multi-language responses and ensu
               disabled={generatingAnswer}
             >
               Send
+            </button>
+            <button
+              type="button"
+              onClick={() => setIsListening(prev => !prev)}
+              className={`px-6 py-2 ${isListening ? 'bg-red-500' : 'bg-blue-500'} text-white rounded-md hover:bg-opacity-80 transition-colors`}
+            >
+              {isListening ? 'Stop Listening' : 'Start Listening'}
             </button>
           </div>
         </form>

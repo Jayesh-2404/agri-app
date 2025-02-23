@@ -7,7 +7,7 @@ import Link from "next/link";
 import logo from "../assets/image/logo.png"; // Ensure correct path
 import "../styles/Header.scss"; // Ensure SCSS setup
 import "../styles/Home.scss";
-
+import GoogleTranslate from "../translate/GoogleTranslate";
 const Header = () => {
   const router = useRouter(); // Hook for navigation
 
@@ -26,6 +26,7 @@ const Header = () => {
         <button type="button" onClick={() => router.push("/schemes")}>
           schemes ➜
         </button>
+        <GoogleTranslate/>
       </div>
     </nav>
   );
