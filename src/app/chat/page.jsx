@@ -97,7 +97,7 @@ to official portals whenever possible. Support multi-language responses and ensu
         <header className="text-center py-4">
         
             <h1 className="text-4xl font-bold text-green-500 hover:text-green-600 transition-colors">
-              Chat AI
+              AGRO AI 🤖
             </h1>
         
         </header>
@@ -110,9 +110,9 @@ to official portals whenever possible. Support multi-language responses and ensu
           {chatHistory.length === 0 ? (
             <div className="h-full flex flex-col items-center justify-center text-center p-6">
               <div className="bg-green-50 rounded-xl p-8 max-w-2xl">
-                <h2 className="text-2xl font-bold text-green-600 mb-4">Welcome to Chat AI! 👋</h2>
+                <h2 className="text-2xl font-bold text-green-600 mb-4">Welcome to AGRO AI! 👋</h2>
                 <p className="text-gray-600 mb-4">
-                  I'm here to help you with anything you'd like to know. You can ask me about:
+                  I'm here to help you with anything about Government Schemes you'd like to know. You can ask me about:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
                   <div className="bg-white p-4 rounded-lg shadow-sm">
@@ -125,7 +125,7 @@ to official portals whenever possible. Support multi-language responses and ensu
                     <span className="text-green-500">📝</span> Crop Information
                   </div>
                   <div className="bg-white p-4 rounded-lg shadow-sm">
-                    <span className="text-green-500">🤔</span> Environment Data
+                    <span className="text-green-500">🤔</span> Financial Support
                   </div>
                 </div>
                 <p className="text-gray-500 mt-6 text-sm">

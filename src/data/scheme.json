@@ -1,213 +1,213 @@
 {
-    "schemes": [
-      {
-        "name": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
-        "description": "Aims to provide affordable crop insurance to farmers against non-preventable natural risks.",
-        "date": "2016-02-18",
-        "link": "https://en.wikipedia.org/wiki/Pradhan_Mantri_Fasal_Bima_Yojana"
-      },
-      {
+  "schemes": [
+    {
+      "name": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+      "description": "Aims to provide affordable crop insurance to farmers against non-preventable natural risks.",
+      "date": "2016-02-18",
+      "link": "https://pmfby.gov.in/"
+    },
+    {
 
-        "name": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
-        "description": "Provides income support of ₹6,000 per year to small and marginal farmers, payable in three equal installments.",
-        "date": "2019-02-01",
-        "link": "https://en.wikipedia.org/wiki/Pradhan_Mantri_Kisan_Samman_Nidhi"
-      },
-      {
+      "name": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+      "description": "Provides income support of ₹6,000 per year to small and marginal farmers, payable in three equal installments.",
+      "date": "2019-02-01",
+      "link": "https://pmkisan.gov.in/"
+    },
+    {
 
-        "name": "Pradhan Mantri Krishi Sinchai Yojana (PMKSY)",
-        "description": "Aims to enhance farm productivity by ensuring efficient water usage through various irrigation initiatives.",
-        "date": "2015-07-01",
-        "link": "https://en.wikipedia.org/wiki/Pradhan_Mantri_Krishi_Sinchai_Yojana"
-      },
-      {
+      "name": "Pradhan Mantri Krishi Sinchai Yojana (PMKSY)",
+      "description": "Aims to enhance farm productivity by ensuring efficient water usage through various irrigation initiatives.",
+      "date": "2015-07-01",
+      "link": "https://www.pmksy.gov.in/"
+    },
+    {
 
-        "name": "Soil Health Card Scheme",
-        "description": "Provides soil health cards to farmers, detailing soil nutrient status and recommendations for fertilizers.",
-        "date": "2015-02-19",
-        "link": "https://en.wikipedia.org/wiki/Soil_Health_Card_Scheme"
-      },
-      {
+      "name": "Soil Health Card Scheme",
+      "description": "Provides soil health cards to farmers, detailing soil nutrient status and recommendations for fertilizers.",
+      "date": "2015-02-19",
+      "link": "https://soilhealth.dac.gov.in/"
+    },
+    {
 
-        "name": "PM Kisan Maan Dhan Yojana (PM-KMY)",
-        "description": "A pension scheme for small and marginal farmers, ensuring a monthly pension of ₹3,000 upon reaching 60 years of age.",
-        "date": "2019-09-12",
-        "link": "https://timesofindia.indiatimes.com/india/empowering-indias-farmers-list-of-schemes-for-welfare-of-farmers-in-india/articleshow/107854121.cms"
-      },
-      {
+      "name": "PM Kisan Maan Dhan Yojana (PM-KMY)",
+      "description": "A pension scheme for small and marginal farmers, ensuring a monthly pension of ₹3,000 upon reaching 60 years of age.",
+      "date": "2019-09-12",
+      "link": "https://pmkmy.gov.in/"
+    },
+    {
 
-        "name": "Kisan Credit Card (KCC) Scheme",
-        "description": "Provides farmers with timely access to credit for their cultivation and other needs.",
-        "date": "1998-08-01",
-        "link": "https://www.zeebiz.com/economy-infra/policy-initiatives/news-pm-kisan-samman-nidhi-installment-news-kisan-credit-card-fasal-bima-yojana-krishi-sinchai-vikas-yojana-enam-narendra-modi-bjp-farmers-income-double-scheme-225266"
-      },
-      {
+      "name": "Kisan Credit Card (KCC) Scheme",
+      "description": "Provides farmers with timely access to credit for their cultivation and other needs.",
+      "date": "1998-08-01",
+      "link": "https://www.pmkisan.gov.in/"
+    },
+    {
 
-        "name": "Pradhan Mantri Kisan Urja Suraksha evam Utthaan Mahabhiyan (PM-KUSUM)",
-        "description": "Encourages the use of solar energy among farmers by providing financial support for setting up solar pumps and grid-connected solar power plants.",
-        "date": "2019-03-08",
-        "link": "https://en.wikipedia.org/wiki/PM_Kusum_Scheme"
-      },
-      {
+      "name": "Pradhan Mantri Kisan Urja Suraksha evam Utthaan Mahabhiyan (PM-KUSUM)",
+      "description": "Encourages the use of solar energy among farmers by providing financial support for setting up solar pumps and grid-connected solar power plants.",
+      "date": "2019-03-08",
+      "link": "https://mnre.gov.in/"
+    },
+    {
 
-        "name": "National Agriculture Market (eNAM)",
-        "description": "An online trading platform aiming to create a unified national market for agricultural commodities.",
-        "date": "2016-04-14",
-        "link": "https://www.zeebiz.com/economy-infra/policy-initiatives/news-pm-kisan-samman-nidhi-installment-news-kisan-credit-card-fasal-bima-yojana-krishi-sinchai-vikas-yojana-enam-narendra-modi-bjp-farmers-income-double-scheme-225266"
-      },
-      {
+      "name": "National Agriculture Market (eNAM)",
+      "description": "An online trading platform aiming to create a unified national market for agricultural commodities.",
+      "date": "2016-04-14",
+      "link": "https://www.enam.gov.in/web/"
+    },
+    {
 
-        "name": "Rashtriya Krishi Vikas Yojana (RKVY)",
-        "description": "Provides financial support to states to enhance agricultural productivity and ensure the holistic development of agriculture and allied sectors.",
-        "launch_date": "2007-08-01",
-        "link": "https://www.zeebiz.com/economy-infra/policy-initiatives/news-pm-kisan-samman-nidhi-installment-news-kisan-credit-card-fasal-bima-yojana-krishi-sinchai-vikas-yojana-enam-narendra-modi-bjp-farmers-income-double-scheme-225266"
-      },
-      {
+      "name": "Rashtriya Krishi Vikas Yojana (RKVY)",
+      "description": "Provides financial support to states to enhance agricultural productivity and ensure the holistic development of agriculture and allied sectors.",
+      "launch_date": "2007-08-01",
+      "link": "https://rkvy.nic.in/"
+    },
+    {
 
-        "name": "Agriculture Infrastructure Fund (AIF)",
-        "description": "Provides medium to long-term debt financing for investment in viable projects for post-harvest management infrastructure and community farming assets.",
-        "launch_date": "2020-07-08",
-        "link": "https://timesofindia.indiatimes.com/india/empowering-indias-farmers-list-of-schemes-for-welfare-of-farmers-in-india/articleshow/107854121.cms"
-      },
-      {
+      "name": "Agriculture Infrastructure Fund (AIF)",
+      "description": "Provides medium to long-term debt financing for investment in viable projects for post-harvest management infrastructure and community farming assets.",
+      "launch_date": "2020-07-08",
+      "link": "https://www.agricultureinfrastructure.com/"
+    },
+    {
 
-        "name": "Interest subvention for dairy sector",
-        "description": "Introduced to offset the economic impact of Covid-19 on the dairy sector, supporting dairy cooperatives and farmer producer organizations through NDDB.",
-        "launch_date": "2020",
-        "link": "https://dahd.nic.in/"
-      },
-      {
+      "name": "Interest subvention for dairy sector",
+      "description": "Introduced to offset the economic impact of Covid-19 on the dairy sector, supporting dairy cooperatives and farmer producer organizations through NDDB.",
+      "launch_date": "2020",
+      "link": "https://www.nddb.coop/"
+    },
+    {
 
-        "name": "Weather Based Crop Insurance Scheme (WBCIS)",
-        "description": "Provides insurance based on weather parameters to mitigate financial losses for farmers.",
-        "launch_date": "2007",
-        "link": "https://pmfby.gov.in/"
-      },
-      {
+      "name": "Weather Based Crop Insurance Scheme (WBCIS)",
+      "description": "Provides insurance based on weather parameters to mitigate financial losses for farmers.",
+      "launch_date": "2007",
+      "link": "https://pmfby.gov.in/"
+    },
+    {
 
-        "name": "Coconut Palm Insurance Scheme (CPIS)",
-        "description": "Insurance coverage for coconut farmers against natural calamities.",
-        "launch_date": "2009",
-        "link": "https://pmfby.gov.in/"
-      },
-      {
+      "name": "Coconut Palm Insurance Scheme (CPIS)",
+      "description": "Insurance coverage for coconut farmers against natural calamities.",
+      "launch_date": "2009",
+      "link": "https://pmfby.gov.in/"
+    },
+    {
 
-        "name": "Pilot Unified Package Insurance Scheme (UPIS)",
-        "description": "A pilot insurance scheme covering crops, livestock, life, and accident insurance for farmers in selected districts.",
-        "launch_date": "2016",
-        "link": "https://pmfby.gov.in/"
-      },
-      {
+      "name": "Pilot Unified Package Insurance Scheme (UPIS)",
+      "description": "A pilot insurance scheme covering crops, livestock, life, and accident insurance for farmers in selected districts.",
+      "launch_date": "2016",
+      "link": "https://pmfby.gov.in/"
+    },
+    {
 
-        "name": "Agri Stack",
-        "description": "A digital initiative to integrate agricultural data and improve decision-making for farmers and stakeholders.",
-        "launch_date": "2021",
-        "link": "https://agristack.gov.in/#/"
-      },
-      {
+      "name": "Agri Stack",
+      "description": "A digital initiative to integrate agricultural data and improve decision-making for farmers and stakeholders.",
+      "launch_date": "2021",
+      "link": "https://agristack.gov.in/#/"
+    },
+    {
 
-        "name": "Agri-Clinics and Agri-Business Centres",
-        "description": "Aims to provide business and employment opportunities to agriculture graduates by setting up agri-clinics and agri-business centers.",
-        "launch_date": "2002",
-        "link": "https://acabcmis.gov.in/"
-      },
-      {
+      "name": "Agri-Clinics and Agri-Business Centres",
+      "description": "Aims to provide business and employment opportunities to agriculture graduates by setting up agri-clinics and agri-business centers.",
+      "launch_date": "2002",
+      "link": "https://acabcmis.gov.in/"
+    },
+    {
 
-        "name": "Agricultural Census, New Delhi",
-        "description": "Conducts a census to collect data on agricultural holdings, land use, and farmer demographics.",
-        "launch_date": "Every 5 years",
-        "link": "https://agcensus.gov.in/AgriCensus/"
-      },
-      {
+      "name": "Agricultural Census, New Delhi",
+      "description": "Conducts a census to collect data on agricultural holdings, land use, and farmer demographics.",
+      "launch_date": "Every 5 years",
+      "link": "https://agcensus.gov.in/AgriCensus/"
+    },
+    {
 
-        "name": "Digital Platform for Farm Mechanization and Technology",
-        "description": "Promotes farm mechanization and technology to enhance productivity and efficiency in agriculture.",
-        "launch_date": "2014",
-        "link": "https://agrimachinery.nic.in/"
-      },
-      {
- 
-        "name": "Direct Benefit Transfer Portal for Agriculture Schemes",
-        "description": "A portal for the direct transfer of benefits under agricultural schemes to farmers' bank accounts.",
-        "launch_date": "2013",
-        "link": "https://dbtdacfw.gov.in/"
-      },
-      {
+      "name": "Digital Platform for Farm Mechanization and Technology",
+      "description": "Promotes farm mechanization and technology to enhance productivity and efficiency in agriculture.",
+      "launch_date": "2014",
+      "link": "https://agrimachinery.nic.in/"
+    },
+    {
 
-        "name": "National Agriculture Market Portal (NAM)",
-        "description": "A pan-India electronic trading portal to create a unified national market for agricultural commodities.",
-        "launch_date": "2016",
-        "link": "https://www.enam.gov.in/web/"
-      },
-      {
+      "name": "Direct Benefit Transfer Portal for Agriculture Schemes",
+      "description": "A portal for the direct transfer of benefits under agricultural schemes to farmers' bank accounts.",
+      "launch_date": "2013",
+      "link": "https://dbtdacfw.gov.in/"
+    },
+    {
 
-        "name": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
-        "description": "Aims to provide affordable crop insurance to farmers against non-preventable natural risks.",
-        "date": "2016-02-18",
-        "link": "https://en.wikipedia.org/wiki/Pradhan_Mantri_Fasal_Bima_Yojana"
-      },
-      {
+      "name": "National Agriculture Market Portal (NAM)",
+      "description": "A pan-India electronic trading portal to create a unified national market for agricultural commodities.",
+      "launch_date": "2016",
+      "link": "https://www.enam.gov.in/web/"
+    },
+    {
 
-        "name": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
-        "description": "Provides income support of ₹6,000 per year to small and marginal farmers, payable in three equal installments.",
-        "date": "2019-02-01",
-        "link": "https://en.wikipedia.org/wiki/Pradhan_Mantri_Kisan_Samman_Nidhi"
-      },
-      {
+      "name": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+      "description": "Aims to provide affordable crop insurance to farmers against non-preventable natural risks.",
+      "date": "2016-02-18",
+      "link": "https://en.wikipedia.org/wiki/Pradhan_Mantri_Fasal_Bima_Yojana"
+    },
+    {
 
-        "name": "Pradhan Mantri Krishi Sinchai Yojana (PMKSY)",
-        "description": "Aims to enhance farm productivity by ensuring efficient water usage through various irrigation initiatives.",
-        "date": "2015-07-01",
-        "link": "https://en.wikipedia.org/wiki/Pradhan_Mantri_Krishi_Sinchai_Yojana"
-      },
-      {
+      "name": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+      "description": "Provides income support of ₹6,000 per year to small and marginal farmers, payable in three equal installments.",
+      "date": "2019-02-01",
+      "link": "https://en.wikipedia.org/wiki/Pradhan_Mantri_Kisan_Samman_Nidhi"
+    },
+    {
 
-        "name": "Soil Health Card Scheme",
-        "description": "Provides soil health cards to farmers, detailing soil nutrient status and recommendations for fertilizers.",
-        "date": "2015-02-19",
-        "link": "https://en.wikipedia.org/wiki/Soil_Health_Card_Scheme"
-      },
-      {
+      "name": "Pradhan Mantri Krishi Sinchai Yojana (PMKSY)",
+      "description": "Aims to enhance farm productivity by ensuring efficient water usage through various irrigation initiatives.",
+      "date": "2015-07-01",
+      "link": "https://en.wikipedia.org/wiki/Pradhan_Mantri_Krishi_Sinchai_Yojana"
+    },
+    {
 
-        "name": "PM Kisan Maan Dhan Yojana (PM-KMY)",
-        "description": "A pension scheme for small and marginal farmers, ensuring a monthly pension of ₹3,000 upon reaching 60 years of age.",
-        "date": "2019-09-12",
-        "link": "https://timesofindia.indiatimes.com/india/empowering-indias-farmers-list-of-schemes-for-welfare-of-farmers-in-india/articleshow/107854121.cms"
-      },
-      {
+      "name": "Soil Health Card Scheme",
+      "description": "Provides soil health cards to farmers, detailing soil nutrient status and recommendations for fertilizers.",
+      "date": "2015-02-19",
+      "link": "https://en.wikipedia.org/wiki/Soil_Health_Card_Scheme"
+    },
+    {
 
-        "name": "National Bamboo Mission",
-        "description": "Aims to increase the area under bamboo cultivation and boost the bamboo-based economy.",
-        "date": "2006",
-        "link": "https://nbm.da.gov.in/"
-      },
-      {
+      "name": "PM Kisan Maan Dhan Yojana (PM-KMY)",
+      "description": "A pension scheme for small and marginal farmers, ensuring a monthly pension of ₹3,000 upon reaching 60 years of age.",
+      "date": "2019-09-12",
+      "link": "https://timesofindia.indiatimes.com/india/empowering-indias-farmers-list-of-schemes-for-welfare-of-farmers-in-india/articleshow/107854121.cms"
+    },
+    {
 
-        "name": "National Food Security Mission (NFSM)",
-        "description": "A mission to increase the production of rice, wheat, pulses, and coarse cereals through area expansion and productivity enhancement.",
-        "date": "2007",
-        "link": "https://nfsm.gov.in/"
-      },
-      {
+      "name": "National Bamboo Mission",
+      "description": "Aims to increase the area under bamboo cultivation and boost the bamboo-based economy.",
+      "date": "2006",
+      "link": "https://nbm.da.gov.in/"
+    },
+    {
 
-        "name": "Pradhan Mantri Kisaan Maan-dhan Yojana (PM-KMY)",
-        "description": "A social security scheme for small and marginal farmers ensuring a monthly pension post-retirement.",
-        "date": "2019",
-        "link": "https://pmkmy.gov.in/"
-      },
-      {
+      "name": "National Food Security Mission (NFSM)",
+      "description": "A mission to increase the production of rice, wheat, pulses, and coarse cereals through area expansion and productivity enhancement.",
+      "date": "2007",
+      "link": "https://nfsm.gov.in/"
+    },
+    {
 
-        "name": "National Agriculture Market (eNAM)",
-        "description": "An online trading platform aiming to create a unified national market for agricultural commodities.",
-        "date": "2016",
-        "link": "https://www.enam.gov.in/web/"
-      },
-      {
+      "name": "Pradhan Mantri Kisaan Maan-dhan Yojana (PM-KMY)",
+      "description": "A social security scheme for small and marginal farmers ensuring a monthly pension post-retirement.",
+      "date": "2019",
+      "link": "https://pmkmy.gov.in/"
+    },
+    {
 
-        "name": "Kisan Suvidha",
-        "description": "A mobile application providing weather forecasts, market prices, and expert advisories for farmers.",
-        "date": "2016",
-        "link": "https://kisansuvidha.in/"
-      }
-    ]
-  }
+      "name": "National Agriculture Market (eNAM)",
+      "description": "An online trading platform aiming to create a unified national market for agricultural commodities.",
+      "date": "2016",
+      "link": "https://www.enam.gov.in/web/"
+    },
+    {
+
+      "name": "Kisan Suvidha",
+      "description": "A mobile application providing weather forecasts, market prices, and expert advisories for farmers.",
+      "date": "2016",
+      "link": "https://kisansuvidha.in/"
+    }
+  ]
+}

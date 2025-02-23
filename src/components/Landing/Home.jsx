@@ -23,7 +23,7 @@ const Home = () => {
           <Image src={img1} alt="img1" width={1920} height={1080} priority />
           <div className='carousel-caption'>
             <h2>AGRO APP</h2>
-            <p>Discover Government Aided Schemes supporting farmers</p>
+            <p>Discover Government Aided Schemes , Subsidies and Financial Support  supporting farmers</p>
           </div>
         </div>
         <div className='carousel-item'>
@@ -44,10 +44,10 @@ const Home = () => {
       <section id="scheme-section">
         <div className="text-wrapper">
           <div className="title-text">
-            <h1>Namaskar Dosto!</h1>
+            <h1>Personalize Assistance for Farmers!</h1>
             <p className="subheading">
-              Welcome to Agroapp, a platform which helps you find the best
-              <br />Government Aided Schemes for Farmers
+            Smart Farming, Smarter Choices: AI-Powered Access to Government Schemes, Subsidies, and Financial Support!
+              <br />
             </p>
           </div>
           <div className="btn-wrapper">
@@ -59,19 +59,19 @@ const Home = () => {
         <section className="scheme-section">
           <div className="scheme-container">
             <div className="scheme-item">
-              <span className="scheme-count">2010+</span>
+              <span className="scheme-count">100+</span>
               <div className="scheme-info">
                 <span className="scheme-title">Total Schemes →</span>
               </div>
             </div>
             <div className="scheme-item">
-              <span className="scheme-count">520+</span>
+              <span className="scheme-count">50+</span>
               <div className="scheme-info">
                 <span className="scheme-title">Central Schemes →</span>
               </div>
             </div>
             <div className="scheme-item">
-              <span className="scheme-count">1490+</span>
+              <span className="scheme-count">100+</span>
               <div className="scheme-info">
                 <span className="scheme-title">States/UTs Schemes →</span>
               </div>
@@ -85,21 +85,21 @@ const Home = () => {
             <h3>About Project</h3>
             <p>
               Welcome to Agro App, a pioneering National Platform developed as
-              part of our college project for the subject of Web-Based
-              Programming. Implemented using PHP, our platform serves as a
-              comprehensive solution, offering a single point of access for
-              citizens to explore and discover various Government schemes related
-              to agriculture.
+              part of our  project for the subject of Web-Based
+              Programming. Our platform serves as a comprehensive solution, offering
+              a single point of access for citizens to explore and discover various
+              Government schemes related to agriculture.
+
             </p>
             <p>
-              Agro App empowers users to effortlessly navigate through a myriad of
-              scheme information, tailored to their specific eligibility criteria.
+            Our platform is designed to help farmers easily access government schemes, subsidies, and financial support 
+            in a simple and user-friendly manner. With a smart chatbot featuring voice input, farmers can search for 
+            relevant schemes without needing to type, making it accessible even for those unfamiliar with technology. 
+            The website supports multiple languages, ensuring farmers across India can use it in their preferred language.
+             Additionally, the bookmark feature allows users to save important schemes for future reference. 
+             
             </p>
-            <p>
-              With Agro App, users can easily identify and apply for the schemes
-              that best suit their agricultural needs. Furthermore, our platform
-              provides step-by-step guidance on the application process.
-            </p>
+            
             <a href="/about" className="view-more">View More →</a>
           </div>
           <div className="image-container">

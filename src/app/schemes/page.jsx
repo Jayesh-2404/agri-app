@@ -72,7 +72,7 @@ export default function Home() {
         <Link href="/schemes/bookmarks"
                 className="inline-flex items-center rounded-lg bg-black px-4 py-2 text-white transition-colors hover:bg-gray-800"
               >
-                bookmarks
+                BOOKMARKS
                 <svg className="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
