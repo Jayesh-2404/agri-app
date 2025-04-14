@@ -6,6 +6,7 @@ import axios from "axios";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
+
 function Chat() {
   const [chatHistory, setChatHistory] = useState([]);
   const [question, setQuestion] = useState("");
@@ -60,16 +61,16 @@ to official portals whenever possible. Support multi-language responses and ensu
   async function generateAnswer(e) {
     e.preventDefault();
     if (!question.trim()) return;
-    
+
     setGeneratingAnswer(true);
     const currentQuestion = question;
     setQuestion("");
-    
+
     setChatHistory(prev => [...prev, { type: 'question', content: currentQuestion }]);
-    
+
     try {
       const response = await axios({
-        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyAW-B8Es6YDd98inqpBh3xLKTqzdY-_eS0`,
+        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${process.env.REACT_APP_API_KEY}`,
         method: "post",
         data: {
           contents: [
