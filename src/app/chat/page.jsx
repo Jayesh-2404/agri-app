@@ -1,6 +1,6 @@
 "use client"
 //helo
-import { useState, useRef, useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 // import "../styles/Chat.scss";
 import axios from "axios";
 import ReactMarkdown from "react-markdown";
@@ -16,10 +16,10 @@ function Chat() {
 
   const chatContainerRef = useRef(null);
   const context = `
-You are a helpful assistant specialized in Government schemes, subsidies, and financial support provided for farmers by the government. 
-Your task is to provide accurate and concise information regarding various schemes, including their objectives, eligibility criteria, benefits, 
-application process, deadlines, and required documents. You should categorize schemes into central, state, and special financial assistance programs, 
-ensuring that farmers receive relevant information based on their location. Additionally, guide users on how to apply for subsidies and link them 
+You are a helpful assistant specialized in Government schemes, subsidies, and financial support provided for farmers by the government.
+Your task is to provide accurate and concise information regarding various schemes, including their objectives, eligibility criteria, benefits,
+application process, deadlines, and required documents. You should categorize schemes into central, state, and special financial assistance programs,
+ensuring that farmers receive relevant information based on their location. Additionally, guide users on how to apply for subsidies and link them
 to official portals whenever possible. Support multi-language responses and ensure accessibility for farmers with different backgrounds.
 `;
 
@@ -70,7 +70,7 @@ to official portals whenever possible. Support multi-language responses and ensu
 
     try {
       const response = await axios({
-        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${process.env.REACT_APP_API_KEY}`,
+        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${process.env.NEXT_PUBLIC_GEMINI_API_KEY}`,
         method: "post",
         data: {
           contents: [
@@ -94,17 +94,17 @@ to official portals whenever possible. Support multi-language responses and ensu
   return (
     <div className="fixed inset-0 bg-gradient-to-r from-green-50 to-green-100">
       <div className="h-full max-w-4xl mx-auto flex flex-col p-3">
-        
+
         <header className="text-center py-4">
-        
+
             <h1 className="text-4xl font-bold text-green-500 hover:text-green-600 transition-colors">
               AGRO AI 🤖
             </h1>
-        
+
         </header>
 
-        
-        <div 
+
+        <div
           ref={chatContainerRef}
           className="flex-1 overflow-y-auto mb-4 rounded-lg bg-white shadow-lg p-4 hide-scrollbar"
         >
@@ -139,7 +139,7 @@ to official portals whenever possible. Support multi-language responses and ensu
               {chatHistory.map((chat, index) => (
                 <div key={index} className={`mb-4 ${chat.type === 'question' ? 'text-right' : 'text-left'}`}>
                   <div className={`inline-block max-w-[80%] p-3 rounded-lg overflow-auto hide-scrollbar ${
-                    chat.type === 'question' 
+                    chat.type === 'question'
                       ? 'bg-green-500 text-white rounded-br-none'
                       : 'bg-gray-100 text-gray-800 rounded-bl-none'
                   }`}>
@@ -163,22 +163,23 @@ to official portals whenever possible. Support multi-language responses and ensu
         {/* Fixed Input Form */}
         <form onSubmit={generateAnswer} className="bg-white rounded-lg shadow-lg p-4">
           <div className="flex gap-2">
-            <textarea
-              required
-              className="flex-1 border border-gray-300 rounded p-3 focus:border-green-400 focus:ring-1 focus:ring-green-400 resize-none relative"
-              value={question}
-              onChange={(e) => setQuestion(e.target.value)}
-              placeholder="Ask anything..."
-              rows="2"
-              onKeyDown={(e) => {
-                if (e.key === 'Enter' && !e.shiftKey) {
-                  e.preventDefault();
-                  generateAnswer(e);
-                }
-              }}
-            >
-              <span className="absolute left-3 top-2 text-gray-500">🎤</span>
-            </textarea>
+            <div className="relative flex-1">
+              <textarea
+                required
+                className="w-full border border-gray-300 rounded p-3 focus:border-green-400 focus:ring-1 focus:ring-green-400 resize-none"
+                value={question}
+                onChange={(e) => setQuestion(e.target.value)}
+                placeholder="Ask anything..."
+                rows="2"
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault();
+                    generateAnswer(e);
+                  }
+                }}
+              />
+              <span className="absolute left-3 top-2 text-gray-500 pointer-events-none">🎤</span>
+            </div>
             <button
               type="submit"
               className={`px-6 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition-colors ${
