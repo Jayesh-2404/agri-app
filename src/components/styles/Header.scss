@@ -2,59 +2,209 @@
 @import "App"; 
 
 nav {
-    width: 100%;
-    padding: 1rem 3rem;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    position: sticky;
-    background-color: $first;
-    top: 0;
-    z-index: 10;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.95);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 
-    > img {
-        width: 200px;
-        cursor: pointer;
+    img {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        display: block;
     }
 
-    > main {
-        width: 70%;
+    main {
         display: flex;
-        justify-content: center;
+        gap: 2rem;
         align-items: center;
 
-        > a {
-            color: $second;
-            margin: 0 1.5rem;
+        a {
+            color: #333;
             text-decoration: none;
-            font-weight: bold;
-            font-size: 1.2rem;
+            font-weight: 500;
             transition: color 0.3s ease;
 
             &:hover {
-                color: $third;
+                color: #4CAF50;
             }
         }
     }
 
-    > button {
-        font-size: 1.2rem;
-        padding: 0.75rem 1.5rem;
-        background-color: #007633;
-        color: white;
-        border: none;
-        border-radius: 12px;
-        cursor: pointer;
-        transition: background-color 0.3s ease, transform 0.3s ease;
+    .btn-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
 
-        &:hover {
-            background-color: #005f27;
-            transform: scale(1.05);
+        button {
+            padding: 0.4rem 1rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 4px;
+            background: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            display: flex;
+            align-items: center;
+            height: 40px;
+            min-width: 110px;
+            justify-content: center;
+            font-weight: 500;
+
+            &:hover {
+                background: #45a049;
+            }
         }
 
-        &:active {
-            transform: scale(0.95);
+        .google-translate-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 52px;
+            min-width: 52px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+            margin-right: 0.5rem;
+            padding: 0 0.4rem;
+            transition: box-shadow 0.2s, background 0.2s;
+
+            &:hover {
+                background: #f3f3f3;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+            }
+
+            img, iframe, span {
+                max-height: 44px;
+                max-width: 44px;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            padding: 0.5rem;
+            cursor: pointer;
+            color: #333;
+            margin-left: 0.25rem;
+
+            &:hover {
+                color: #4CAF50;
+            }
+        }
+    }
+
+    .mobile-menu {
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+
+        a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 0;
+            width: 100%;
+            text-align: center;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: #4CAF50;
+            }
+        }
+
+        button {
+            width: 100%;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 4px;
+            background: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s ease;
+
+            &:hover {
+                background: #45a049;
+            }
+        }
+    }
+}
+
+// Ensure nav main is visible on desktop, hidden on mobile
+nav main {
+    display: flex;
+}
+
+// Responsive styles
+@media (max-width: 1024px) {
+    nav {
+        padding: 1rem;
+        main {
+            gap: 1.2rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        main {
+            display: none;
+        }
+        .btn-wrapper {
+            .mobile-menu-btn {
+                display: block;
+            }
+        }
+        .mobile-menu {
+            display: flex;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 0.75rem;
+        img {
+            width: 60px;
+            height: 60px;
+        }
+        .btn-wrapper {
+            gap: 0.3rem;
+            button {
+                padding: 0.3rem 0.7rem;
+                font-size: 0.95rem;
+                min-width: 90px;
+                height: 34px;
+            }
+        }
+    }
+    .google-translate-container {
+        height: 40px;
+        min-width: 40px;
+        border-radius: 8px;
+        padding: 0 0.2rem;
+        img, iframe, span {
+            max-height: 28px;
+            max-width: 28px;
         }
     }
 }
